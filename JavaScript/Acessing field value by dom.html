@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewpoint" content="width-device-width,initial scale=1">
+    </head>
+    <body>
+        <form name="form1">
+            Enter Name:<input type="text" name="name"/>
+            <input type="button" onclick="printvalue()"value="printname"/>
+        </form>
+        <script type="text/javascript">
+          function printvalue() {
+            var name=document.form1.name.value;
+            alert("welcome:"+name);    
+        }
+        </script>
+    </body>
+</html>
