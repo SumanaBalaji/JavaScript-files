@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewpoint" content="width-device-width,initial scale=1">
+    </head>
+    <body>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: blue; widTH: 120px;height:20px;padding:40px;">
+            Mouse Over Me </div>
+            <br><br>
+            <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: blueviolet; widows: 90px;height:20px;padding:40px;">
+            Click Me</div>
+            <script>
+                function mOver(obj){
+                    obj.innerHTML="Thank You"
+                }
+                function mOut(obj) {
+                    obj.innerHTML="Welcome"
+                    
+                }
+                function mDown(obj) {
+                    obj.style.backgroundColor="red";
+                    obj.innerHTML="Release Me";
+                }
+                function mUp(obj){
+                    obj.style.backgroundColor="blueviolet";
+                    obj.innerHTML="Thank You"
+                    
+                }
+            </script>
+    </body>
+</html>

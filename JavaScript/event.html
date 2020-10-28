@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewpoint" content="width-device-width,initial scale=1">
+    </head>
+    <body>
+        Enter your name:<input type="text" id="fname" onchange="myFunction()">
+         <script>
+            function myFunction() {
+                var x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+            }
+        </script> 
+    </body>
+</html>
